@@ -1,4 +1,5 @@
 ﻿import CallRoundedIcon from "@mui/icons-material/CallRounded";
+import EmailRoundedIcon from "@mui/icons-material/EmailRounded";
 import EventAvailableRoundedIcon from "@mui/icons-material/EventAvailableRounded";
 import PlaceRoundedIcon from "@mui/icons-material/PlaceRounded";
 import { Box, Card, CardContent, Grid, Stack, Typography } from "@mui/material";
@@ -18,6 +19,11 @@ function Contact() {
       icon: <CallRoundedIcon color="primary" />,
       label: t("contact.phoneLabel"),
       value: t("contact.phone"),
+    },
+    {
+      icon: <EmailRoundedIcon color="primary" />,
+      label: t("contact.emailLabel"),
+      value: t("contact.email"),
     },
     {
       icon: <EventAvailableRoundedIcon color="primary" />,
@@ -68,9 +74,21 @@ function Contact() {
                       >
                         {item.label}
                       </Typography>
-                      <Typography variant="body1" color="text.secondary">
-                        {item.value}
-                      </Typography>
+                      {item.label === t("contact.emailLabel") ? (
+                        <Typography
+                          variant="body1"
+                          color="text.secondary"
+                          component="a"
+                          href={`mailto:${item.value}`}
+                          sx={{ textDecoration: "none", color: "inherit" }}
+                        >
+                          {item.value}
+                        </Typography>
+                      ) : (
+                        <Typography variant="body1" color="text.secondary">
+                          {item.value}
+                        </Typography>
+                      )}
                     </Stack>
                   </Stack>
                 ))}

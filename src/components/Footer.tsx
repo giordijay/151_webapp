@@ -1,5 +1,6 @@
-﻿import InstagramIcon from "@mui/icons-material/Instagram";
-import LanguageIcon from "@mui/icons-material/Language";
+﻿import FacebookIcon from "@mui/icons-material/Facebook";
+import EmailRoundedIcon from "@mui/icons-material/EmailRounded";
+import InstagramIcon from "@mui/icons-material/Instagram";
 import LocationOnRoundedIcon from "@mui/icons-material/LocationOnRounded";
 import {
   Box,
@@ -29,7 +30,7 @@ function Footer({ sectionLinks }: FooterProps) {
         <Box
           sx={{
             p: { xs: 3, md: 4 },
-            borderRadius: 8,
+            borderRadius: 3,
             bgcolor: "rgba(39, 28, 24, 0.94)",
             color: "rgba(255, 250, 245, 0.9)",
           }}
@@ -81,7 +82,7 @@ function Footer({ sectionLinks }: FooterProps) {
                 <IconButton
                   color="inherit"
                   component="a"
-                  href="#contact"
+                  href="https://maps.app.goo.gl/nUvmYodWZu2rMWDt6"
                   aria-label="open location section"
                 >
                   <LocationOnRoundedIcon />
@@ -89,7 +90,7 @@ function Footer({ sectionLinks }: FooterProps) {
                 <IconButton
                   color="inherit"
                   component="a"
-                  href="https://instagram.com"
+                  href="https://www.instagram.com/151hairsalon/"
                   target="_blank"
                   rel="noreferrer"
                   aria-label="instagram"
@@ -99,12 +100,20 @@ function Footer({ sectionLinks }: FooterProps) {
                 <IconButton
                   color="inherit"
                   component="a"
-                  href="https://example.com"
+                  href="https://www.facebook.com/151hairsalon/"
                   target="_blank"
                   rel="noreferrer"
-                  aria-label="website"
+                  aria-label="facebook"
                 >
-                  <LanguageIcon />
+                  <FacebookIcon />
+                </IconButton>
+                <IconButton
+                  color="inherit"
+                  component="a"
+                  href="mailto:151hairsalon@gmail.com"
+                  aria-label="email"
+                >
+                  <EmailRoundedIcon />
                 </IconButton>
               </Stack>
             </Stack>

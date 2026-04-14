@@ -8,7 +8,7 @@
   },
   "hero": {
     "eyebrow": "151 Hair Salon",
-    "title": "Una visione pulita, diretta e distintiva.",
+    "title": "Creating unicorns since 2019",
     "description": "151 Hair Salon e uno spazio costruito su una visione precisa, di ispirazione anglosassone: piu essenziale, piu diretta e lontana dagli standard dei saloni tradizionali. E il posto giusto per chi e stanco dei soliti schemi e cerca un approccio piu onesto, professionale e intenzionale. Ogni scelta segue una direzione precisa: creare qualcosa di autentico e distintivo.",
     "primaryCta": "Prenota ora",
     "secondaryCta": "Scopri i servizi",
@@ -127,6 +127,8 @@
     "address": "Via Levante 5, Porcia (PN)",
     "phoneLabel": "Telefono",
     "phone": "+39 379 1241756",
+    "emailLabel": "Email",
+    "email": "151hairsalon@gmail.com",
     "appointmentLabel": "Disponibilita",
     "appointment": "SOLO SU APPUNTAMENTO"
   },
