@@ -1,50 +1,58 @@
-{
+﻿{
   "nav": {
-    "home": "Studio",
+    "home": "151 Hair Salon",
     "services": "Services",
     "gallery": "Gallery",
     "team": "Team",
     "contact": "Contact"
   },
   "hero": {
-    "eyebrow": "Hair studio",
-    "title": "Precise styling, elevated color, atelier atmosphere.",
-    "description": "Single-page salon website with a premium visual direction, multilingual setup, and placeholder content ready for real assets.",
+    "eyebrow": "151 Hair Salon",
+    "title": "A clean, direct, and distinctive vision.",
+    "description": "151 Hair Salon is a space built on a clear vision, inspired by a modern, London-influenced approach: clean, direct, and set apart from traditional salon standards. It is the right place for those who are tired of the usual and are looking for a more honest, professional, and intentional experience. Every choice follows a clear direction: creating something authentic and distinctive.",
     "primaryCta": "Book now",
     "secondaryCta": "Explore services",
-    "badge": "Color consultation by appointment",
-    "imageTitle": "Hero placeholder",
-    "imageSubtitle": "Replace with salon photography or editorial campaign"
+    "badge": "Only by appointment",
+    "imageTitle": "151 Hair Salon",
+    "imageSubtitle": "Space, style, and vision"
   },
   "services": {
-    "eyebrow": "Signature services",
-    "title": "Service cards are ready for final pricing, timings, and imagery.",
-    "subtitle": "Each block is intentionally scaffolded with placeholders so real content can be dropped in without restructuring the layout.",
-    "items": {
-      "cut": {
-        "title": "Tailored haircut",
-        "description": "Placeholder for face-shape consultation, silhouette design, and maintenance.",
-        "duration": "60 min"
+    "eyebrow": "Services",
+    "title": "Professional services across hair, beauty, and barber.",
+    "subtitle": "Each service is designed to deliver polished, coherent, and recognizable results.",
+    "categories": {
+      "hair": {
+        "title": "Hair",
+        "items": [
+          "Haircut",
+          "Curly Haircut",
+          "Bespoke Colour",
+          "Blonding, Babylights & Lightening",
+          "Vivid Colour",
+          "Toning & Gloss",
+          "Keratin Smoothing Treatment",
+          "Styling & Updos",
+          "Braids",
+          "Reconstructive Treatments"
+        ]
       },
-      "styling": {
-        "title": "Styling and blow-dry",
-        "description": "Placeholder for sleek styling, waves, or event finishing.",
-        "duration": "45 min"
+      "beauty": {
+        "title": "Beauty",
+        "items": [
+          "Lash & Brow Lamination",
+          "Nail Enhancements",
+          "Lash Extensions",
+          "Professional Make-up"
+        ]
       },
-      "color": {
-        "title": "Custom color",
-        "description": "Placeholder for correction work, glossing, and tonal refinement.",
-        "duration": "90 min"
-      },
-      "treatment": {
-        "title": "Care rituals",
-        "description": "Placeholder for scalp therapy, reconstruction, and shine services.",
-        "duration": "50 min"
-      },
-      "bridal": {
-        "title": "Occasion styling",
-        "description": "Placeholder for bridal looks, editorial hair, and elevated updos.",
-        "duration": "75 min"
+      "barber": {
+        "title": "Barber",
+        "items": [
+          "Men's & Kids' Haircut",
+          "Hair Tattoo",
+          "Beard Grooming",
+          "Traditional Shave"
+        ]
       }
     }
   },
@@ -81,50 +89,50 @@
     }
   },
   "team": {
-    "eyebrow": "Studio team",
-    "title": "Team section ready for portraits, roles, and short bios.",
-    "subtitle": "The current profiles are placeholders so the editorial structure is already in place for real staff content.",
+    "eyebrow": "Team",
+    "title": "Professionals with vision, technique, and identity.",
+    "subtitle": "Each profile reflects a precise approach with distinctive results and genuine attention to detail.",
     "members": {
-      "sofia": {
-        "name": "Sofia Marino",
-        "role": "Creative director",
-        "bio": "Placeholder for creative leadership, image consulting, and color direction."
+      "daniela": {
+        "name": "Daniela",
+        "role": "Creative Director & Founder of 151 Hair Salon",
+        "bio": "A contemporary vision, international influences, and a distinctive aesthetic shape every aspect of my work. I create recognizable results that stand apart from the ordinary. Creative colour and curly haircuts define my signature.",
+        "imageAlt": "Daniela"
       },
-      "giulia": {
-        "name": "Giulia Conti",
-        "role": "Senior colorist",
-        "bio": "Placeholder for balayage expertise, gloss work, and soft-lift lighting."
+      "saraHair": {
+        "name": "Sara",
+        "role": "Hairstylist",
+        "bio": "A clean and natural approach guides my work. Colour, lightening techniques, and balayage are my language, delivering luminous, refined results designed to enhance each individual identity.",
+        "imageAlt": "Sara hairstylist"
       },
-      "martina": {
-        "name": "Martina Riva",
-        "role": "Stylist",
-        "bio": "Placeholder for event styling, texture design, and photo-ready finishing."
+      "sona": {
+        "name": "Sona",
+        "role": "Lash & Brow Artist",
+        "bio": "I specialize in lamination and nails with a precise, structured approach, supported by a Master qualification in lamination, delivering clean, balanced, and detail-oriented results.",
+        "imageAlt": "Sona"
+      },
+      "saraBarber": {
+        "name": "Sara",
+        "role": "Barber",
+        "bio": "Through clean lines and contrasts between classic and modern, I craft haircuts and beards with precision and character. I deliver refined work where attention to detail sets me apart.",
+        "imageAlt": "Sara barber"
       }
     }
   },
   "contact": {
-    "eyebrow": "Reach out",
-    "title": "Contact details, hours, form, and map in one section.",
-    "subtitle": "All operational details are placeholders for now, including address, schedule, phone, email, and the map module.",
+    "eyebrow": "Contact",
+    "title": "151 Hair Salon",
+    "subtitle": "We are available by appointment only.",
     "addressLabel": "Address",
-    "address": "12 Placeholder Street, Milan",
+    "address": "Via Levante 5, Porcia (PN)",
     "phoneLabel": "Phone",
-    "phone": "+39 02 0000 0000",
-    "emailLabel": "Email",
-    "email": "hello@ateliermane.it",
-    "hoursLabel": "Hours",
-    "hours": "Tue - Sat · 09:30 AM - 07:00 PM",
-    "formTitle": "Send a message",
-    "name": "Name",
-    "emailField": "Email",
-    "message": "Message",
-    "submit": "Send request",
-    "mapTitle": "Google Maps placeholder",
-    "mapSubtitle": "Replace with the salon's real embed"
+    "phone": "+39 379 1241756",
+    "appointmentLabel": "Availability",
+    "appointment": "ONLY BY APPOINTMENT"
   },
   "footer": {
-    "address": "12 Placeholder Street, Milan · Atelier beauty concept",
-    "copy": "© 2026 Atelier Mane. All rights reserved.",
-    "note": "Footer area is ready for quick links, social accounts, and legal details."
+    "address": "Via Levante 5, Porcia (PN)",
+    "copy": "© 2026 151 Hair Salon. All rights reserved.",
+    "note": "Only by appointment"
   }
 }

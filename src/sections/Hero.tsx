@@ -1,4 +1,4 @@
-import EastRoundedIcon from "@mui/icons-material/EastRounded";
+﻿import EastRoundedIcon from "@mui/icons-material/EastRounded";
 import EventAvailableRoundedIcon from "@mui/icons-material/EventAvailableRounded";
 import {
   Box,
@@ -14,8 +14,8 @@ import Ribbons from "../components/Ribbons";
 import { createPlaceholderArt } from "../utils/placeholderArt";
 
 const heroImage = createPlaceholderArt({
-  title: "Atelier Mane",
-  subtitle: "Hero image placeholder",
+  title: "151 Hair Salon",
+  subtitle: "Space, style, and vision",
   from: "#ba6c43",
   to: "#55624d",
   accent: "#fff0df",
@@ -86,7 +86,7 @@ function Hero() {
               <Typography
                 variant="body1"
                 color="text.secondary"
-                sx={{ maxWidth: 560, fontSize: "1.08rem" }}
+                sx={{ maxWidth: 620, fontSize: "1.08rem" }}
               >
                 {t("hero.description")}
               </Typography>

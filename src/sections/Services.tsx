@@ -1,37 +1,19 @@
-import AccessTimeRoundedIcon from "@mui/icons-material/AccessTimeRounded";
-import {
-  Card,
-  CardContent,
-  CardMedia,
-  Chip,
-  Grid,
-  Stack,
-  Typography,
-  Box,
-  Container,
-} from "@mui/material";
-import { useTranslation } from "react-i18next";
+﻿import FiberManualRecordRoundedIcon from "@mui/icons-material/FiberManualRecordRounded";
+import { Box, Card, CardContent, Chip, Container, Grid, Stack, Typography } from "@mui/material";
 import { useEffect, useRef, useState } from "react";
+import { useTranslation } from "react-i18next";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import { createPlaceholderArt } from "../utils/placeholderArt";
 import scissorImage from "../assets/images/scissor.png";
 
 gsap.registerPlugin(ScrollTrigger);
 
-const serviceKeys = ["cut", "styling", "color", "treatment", "bridal"] as const;
-const gradients = [
-  ["#8b4d30", "#d49370"],
-  ["#55624d", "#7d8c74"],
-  ["#703b39", "#c98574"],
-  ["#3f5247", "#96a883"],
-  ["#9b654c", "#d7a47d"],
-] as const;
+const categoryKeys = ["hair", "beauty", "barber"] as const;
 
 const getScissorSize = (viewportWidth: number) => {
   if (viewportWidth < 600) return 220;
   if (viewportWidth < 900) return 360;
-  return 600;
+  return 560;
 };
 
 function Services() {
@@ -94,7 +76,6 @@ function Services() {
         overflow: "hidden",
       }}
     >
-      {/* Animated Scissor Element */}
       <Box
         ref={scissorRef}
         sx={{
@@ -108,6 +89,7 @@ function Services() {
           backgroundRepeat: "no-repeat",
           zIndex: 1,
           pointerEvents: "none",
+          opacity: 0.75,
         }}
       />
 
@@ -125,58 +107,62 @@ function Services() {
           </Typography>
           <Typography
             variant="h2"
-            sx={{ maxWidth: 680, fontSize: { xs: "2.5rem", md: "4rem" } }}
+            sx={{ maxWidth: 760, fontSize: { xs: "2.5rem", md: "4rem" } }}
           >
             {t("services.title")}
           </Typography>
           <Typography
             variant="body1"
             color="text.secondary"
-            sx={{ maxWidth: 720, fontSize: "1.05rem" }}
+            sx={{ maxWidth: 760, fontSize: "1.05rem" }}
           >
             {t("services.subtitle")}
           </Typography>
         </Stack>
 
         <Grid container spacing={3}>
-          {serviceKeys.map((key, index) => {
-            const [from, to] = gradients[index];
-            const image = createPlaceholderArt({
-              title: t(`services.items.${key}.title`),
-              subtitle: t(`services.items.${key}.duration`),
-              from,
-              to,
-            });
+          {categoryKeys.map((key) => {
+            const items = t(`services.categories.${key}.items`, {
+              returnObjects: true,
+            }) as string[];
 
             return (
-              <Grid item xs={12} md={6} lg={index === 4 ? 12 : 4} key={key}>
+              <Grid item xs={12} md={4} key={key}>
                 <Card sx={{ height: "100%", bgcolor: "background.paper" }}>
-                  <CardMedia
-                    component="img"
-                    image={image}
-                    alt={t(`services.items.${key}.title`)}
-                    sx={{ height: 240 }}
-                  />
                   <CardContent sx={{ p: 3 }}>
                     <Stack spacing={2}>
                       <Stack
                         direction="row"
                         justifyContent="space-between"
-                        spacing={2}
                         alignItems="center"
                       >
                         <Typography variant="h3" sx={{ fontSize: "2rem" }}>
-                          {t(`services.items.${key}.title`)}
+                          {t(`services.categories.${key}.title`)}
                         </Typography>
                         <Chip
-                          icon={<AccessTimeRoundedIcon />}
-                          label={t(`services.items.${key}.duration`)}
+                          label={`${items.length} services`}
                           variant="outlined"
+                          size="small"
                         />
                       </Stack>
-                      <Typography variant="body2" color="text.secondary">
-                        {t(`services.items.${key}.description`)}
-                      </Typography>
+
+                      <Stack spacing={1.2}>
+                        {items.map((item) => (
+                          <Stack
+                            key={item}
+                            direction="row"
+                            spacing={1.25}
+                            alignItems="center"
+                          >
+                            <FiberManualRecordRoundedIcon
+                              sx={{ fontSize: 10, color: "primary.main" }}
+                            />
+                            <Typography variant="body2" color="text.secondary">
+                              {item}
+                            </Typography>
+                          </Stack>
+                        ))}
+                      </Stack>
                     </Stack>
                   </CardContent>
                 </Card>

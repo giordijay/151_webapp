@@ -1,16 +1,17 @@
-import {
-  Avatar,
-  Card,
-  CardContent,
-  Grid,
-  Stack,
-  Typography,
-} from "@mui/material";
+﻿import { Card, CardContent, CardMedia, Grid, Stack, Typography } from "@mui/material";
 import { useTranslation } from "react-i18next";
 import SectionShell from "../components/SectionShell";
+import danielaImage from "../assets/images/team/daniela.jpg";
+import saraHairstylistImage from "../assets/images/team/sara_hairstylist.jpg";
+import sonaImage from "../assets/images/team/sona.jpg";
+import saraBarberImage from "../assets/images/team/sara_barber.jpg";
 
-const memberKeys = ["sofia", "giulia", "martina"] as const;
-const avatarColors = ["#ba6c43", "#55624d", "#85503f"];
+const members = [
+  { key: "daniela", image: danielaImage },
+  { key: "saraHair", image: saraHairstylistImage },
+  { key: "sona", image: sonaImage },
+  { key: "saraBarber", image: saraBarberImage },
+] as const;
 
 function Team() {
   const { t } = useTranslation();
@@ -23,54 +24,38 @@ function Team() {
       subtitle={t("team.subtitle")}
     >
       <Grid container spacing={3}>
-        {memberKeys.map((key, index) => {
-          const name = t(`team.members.${key}.name`);
-          const initials = name
-            .split(" ")
-            .map((part) => part[0])
-            .join("")
-            .slice(0, 2);
-
-          return (
-            <Grid item xs={12} md={4} key={key}>
-              <Card sx={{ height: "100%", bgcolor: "background.paper" }}>
-                <CardContent sx={{ p: 3.5 }}>
-                  <Stack spacing={2.5}>
-                    <Avatar
-                      sx={{
-                        width: 76,
-                        height: 76,
-                        bgcolor: avatarColors[index],
-                        fontWeight: 800,
-                        fontSize: "1.3rem",
-                      }}
-                    >
-                      {initials}
-                    </Avatar>
-                    <Stack spacing={0.5}>
-                      <Typography variant="h3" sx={{ fontSize: "2rem" }}>
-                        {name}
-                      </Typography>
-                      <Typography
-                        variant="subtitle2"
-                        sx={{
-                          color: "primary.main",
-                          letterSpacing: "0.08em",
-                          textTransform: "uppercase",
-                        }}
-                      >
-                        {t(`team.members.${key}.role`)}
-                      </Typography>
-                    </Stack>
-                    <Typography variant="body2" color="text.secondary">
-                      {t(`team.members.${key}.bio`)}
-                    </Typography>
-                  </Stack>
-                </CardContent>
-              </Card>
-            </Grid>
-          );
-        })}
+        {members.map((member) => (
+          <Grid item xs={12} md={6} key={member.key}>
+            <Card sx={{ height: "100%", bgcolor: "background.paper" }}>
+              <CardMedia
+                component="img"
+                image={member.image}
+                alt={t(`team.members.${member.key}.imageAlt`)}
+                sx={{ height: { xs: 300, md: 340 }, objectFit: "cover" }}
+              />
+              <CardContent sx={{ p: 3.5 }}>
+                <Stack spacing={1.2}>
+                  <Typography variant="h3" sx={{ fontSize: "2rem" }}>
+                    {t(`team.members.${member.key}.name`)}
+                  </Typography>
+                  <Typography
+                    variant="subtitle2"
+                    sx={{
+                      color: "primary.main",
+                      letterSpacing: "0.08em",
+                      textTransform: "uppercase",
+                    }}
+                  >
+                    {t(`team.members.${member.key}.role`)}
+                  </Typography>
+                  <Typography variant="body2" color="text.secondary">
+                    {t(`team.members.${member.key}.bio`)}
+                  </Typography>
+                </Stack>
+              </CardContent>
+            </Card>
+          </Grid>
+        ))}
       </Grid>
     </SectionShell>
   );

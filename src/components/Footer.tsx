@@ -1,4 +1,4 @@
-import InstagramIcon from "@mui/icons-material/Instagram";
+﻿import InstagramIcon from "@mui/icons-material/Instagram";
 import LanguageIcon from "@mui/icons-material/Language";
 import LocationOnRoundedIcon from "@mui/icons-material/LocationOnRounded";
 import {
@@ -49,7 +49,7 @@ function Footer({ sectionLinks }: FooterProps) {
                   fontWeight: 800,
                 }}
               >
-                ATELIER MANE
+                151 HAIR SALON
               </Typography>
               <Typography variant="body1">{t("footer.address")}</Typography>
               <Typography

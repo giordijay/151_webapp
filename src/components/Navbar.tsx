@@ -1,4 +1,4 @@
-import MenuRoundedIcon from "@mui/icons-material/MenuRounded";
+﻿import MenuRoundedIcon from "@mui/icons-material/MenuRounded";
 import {
   AppBar,
   Box,
@@ -59,13 +59,13 @@ function Navbar({ sectionLinks }: NavbarProps) {
                 letterSpacing: "0.22em",
               }}
             >
-              ATELIER MANE
+              151 HAIR SALON
             </Typography>
             <Typography
               variant="body2"
               sx={{ color: "text.secondary", fontWeight: 600 }}
             >
-              Hair studio and color lounge
+              Contemporary hair, beauty, and barber studio
             </Typography>
           </Stack>
 
