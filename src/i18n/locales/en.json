@@ -1,0 +1,130 @@
+{
+  "nav": {
+    "home": "Studio",
+    "services": "Services",
+    "gallery": "Gallery",
+    "team": "Team",
+    "contact": "Contact"
+  },
+  "hero": {
+    "eyebrow": "Hair studio",
+    "title": "Precise styling, elevated color, atelier atmosphere.",
+    "description": "Single-page salon website with a premium visual direction, multilingual setup, and placeholder content ready for real assets.",
+    "primaryCta": "Book now",
+    "secondaryCta": "Explore services",
+    "badge": "Color consultation by appointment",
+    "imageTitle": "Hero placeholder",
+    "imageSubtitle": "Replace with salon photography or editorial campaign"
+  },
+  "services": {
+    "eyebrow": "Signature services",
+    "title": "Service cards are ready for final pricing, timings, and imagery.",
+    "subtitle": "Each block is intentionally scaffolded with placeholders so real content can be dropped in without restructuring the layout.",
+    "items": {
+      "cut": {
+        "title": "Tailored haircut",
+        "description": "Placeholder for face-shape consultation, silhouette design, and maintenance.",
+        "duration": "60 min"
+      },
+      "styling": {
+        "title": "Styling and blow-dry",
+        "description": "Placeholder for sleek styling, waves, or event finishing.",
+        "duration": "45 min"
+      },
+      "color": {
+        "title": "Custom color",
+        "description": "Placeholder for correction work, glossing, and tonal refinement.",
+        "duration": "90 min"
+      },
+      "treatment": {
+        "title": "Care rituals",
+        "description": "Placeholder for scalp therapy, reconstruction, and shine services.",
+        "duration": "50 min"
+      },
+      "bridal": {
+        "title": "Occasion styling",
+        "description": "Placeholder for bridal looks, editorial hair, and elevated updos.",
+        "duration": "75 min"
+      }
+    }
+  },
+  "gallery": {
+    "eyebrow": "Visual moodboard",
+    "title": "Placeholder gallery with full-screen preview behavior.",
+    "subtitle": "The section uses an MUI image grid plus preview dialog, ready to receive production photography.",
+    "viewLabel": "Open preview",
+    "items": {
+      "look1": {
+        "title": "Soft copper glow",
+        "category": "Color"
+      },
+      "look2": {
+        "title": "Editorial bob",
+        "category": "Cut"
+      },
+      "look3": {
+        "title": "Gloss finish",
+        "category": "Styling"
+      },
+      "look4": {
+        "title": "Bridal texture",
+        "category": "Event"
+      },
+      "look5": {
+        "title": "Natural waves",
+        "category": "Blow-dry"
+      },
+      "look6": {
+        "title": "Shine ritual",
+        "category": "Treatment"
+      }
+    }
+  },
+  "team": {
+    "eyebrow": "Studio team",
+    "title": "Team section ready for portraits, roles, and short bios.",
+    "subtitle": "The current profiles are placeholders so the editorial structure is already in place for real staff content.",
+    "members": {
+      "sofia": {
+        "name": "Sofia Marino",
+        "role": "Creative director",
+        "bio": "Placeholder for creative leadership, image consulting, and color direction."
+      },
+      "giulia": {
+        "name": "Giulia Conti",
+        "role": "Senior colorist",
+        "bio": "Placeholder for balayage expertise, gloss work, and soft-lift lighting."
+      },
+      "martina": {
+        "name": "Martina Riva",
+        "role": "Stylist",
+        "bio": "Placeholder for event styling, texture design, and photo-ready finishing."
+      }
+    }
+  },
+  "contact": {
+    "eyebrow": "Reach out",
+    "title": "Contact details, hours, form, and map in one section.",
+    "subtitle": "All operational details are placeholders for now, including address, schedule, phone, email, and the map module.",
+    "addressLabel": "Address",
+    "address": "12 Placeholder Street, Milan",
+    "phoneLabel": "Phone",
+    "phone": "+39 02 0000 0000",
+    "emailLabel": "Email",
+    "email": "hello@ateliermane.it",
+    "hoursLabel": "Hours",
+    "hours": "Tue - Sat · 09:30 AM - 07:00 PM",
+    "formTitle": "Send a message",
+    "name": "Name",
+    "emailField": "Email",
+    "message": "Message",
+    "submit": "Send request",
+    "mapTitle": "Google Maps placeholder",
+    "mapSubtitle": "Replace with the salon's real embed"
+  },
+  "footer": {
+    "address": "12 Placeholder Street, Milan · Atelier beauty concept",
+    "copy": "© 2026 Atelier Mane. All rights reserved.",
+    "note": "Footer area is ready for quick links, social accounts, and legal details."
+  }
+}
