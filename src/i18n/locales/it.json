@@ -57,34 +57,57 @@
     }
   },
   "gallery": {
-    "eyebrow": "Visual moodboard",
-    "title": "Galleria placeholder con preview full-screen.",
-    "subtitle": "La struttura usa una griglia MUI e un dialog per anteprima immagini, pronta a ricevere foto reali dei lavori.",
-    "viewLabel": "Apri anteprima",
+    "eyebrow": "Lo spazio",
+    "title": "Il salone, nella sua luce.",
+    "subtitle": "Spazi, dettagli e atmosfera di 151 Hair Salon. Seleziona una foto per aprirla a tutto schermo.",
+    "viewLabel": "Apri \"{{title}}\" a tutto schermo",
+    "closeLabel": "Chiudi immagine",
+    "prevLabel": "Immagine precedente",
+    "nextLabel": "Immagine successiva",
     "items": {
-      "look1": {
-        "title": "Soft copper glow",
-        "category": "Colore"
+      "shot01": {
+        "title": "La vetrina",
+        "imageAlt": "Vetrina del salone con la scritta 151 Hair Salon, vista dalla strada"
       },
-      "look2": {
-        "title": "Editorial bob",
-        "category": "Taglio"
+      "shot02": {
+        "title": "Beauty bar",
+        "imageAlt": "Insegna neon rosa Beauty Bar, piante sospese e specchio a onde"
       },
-      "look3": {
-        "title": "Gloss finish",
-        "category": "Styling"
+      "shot03": {
+        "title": "Le postazioni",
+        "imageAlt": "Fila di postazioni styling lungo lo specchio a tutta altezza"
       },
-      "look4": {
-        "title": "Bridal texture",
-        "category": "Evento"
+      "shot04": {
+        "title": "Il bancone",
+        "imageAlt": "Bancone della reception con listelli rosa retroilluminati, visto dall'ingresso"
       },
-      "look5": {
-        "title": "Natural waves",
-        "category": "Piega"
+      "shot05": {
+        "title": "Sala principale",
+        "imageAlt": "Veduta ampia della sala con postazioni, divisori e reception"
       },
-      "look6": {
-        "title": "Shine ritual",
-        "category": "Trattamento"
+      "shot06": {
+        "title": "Angolo prodotti",
+        "imageAlt": "Mensole con i prodotti per capelli accanto allo specchio rosa a onde"
+      },
+      "shot07": {
+        "title": "Verso l'ingresso",
+        "imageAlt": "Vista dalle postazioni verso l'ingresso e la luce naturale"
+      },
+      "shot08": {
+        "title": "Poltrona vintage",
+        "imageAlt": "Poltrona da barbiere vintage davanti alla parete scura dei prodotti"
+      },
+      "shot09": {
+        "title": "Zona lavaggio",
+        "imageAlt": "Zona lavaggio con due lavateste e la poltrona da barbiere"
+      },
+      "shot10": {
+        "title": "Postazione nail",
+        "imageAlt": "Postazione manicure con lampade sulla parete rosa"
+      },
+      "shot11": {
+        "title": "Dettaglio tropicale",
+        "imageAlt": "Angolo con carta da parati tropicale scura e fenicotteri, luce calda"
       }
     }
   },

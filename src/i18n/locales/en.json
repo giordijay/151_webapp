@@ -57,34 +57,57 @@
     }
   },
   "gallery": {
-    "eyebrow": "Visual moodboard",
-    "title": "Placeholder gallery with full-screen preview behavior.",
-    "subtitle": "The section uses an MUI image grid plus preview dialog, ready to receive production photography.",
-    "viewLabel": "Open preview",
+    "eyebrow": "The space",
+    "title": "The salon, in its own light.",
+    "subtitle": "Spaces, details, and atmosphere at 151 Hair Salon. Select a photo to open it full size.",
+    "viewLabel": "Open \"{{title}}\" full size",
+    "closeLabel": "Close image",
+    "prevLabel": "Previous image",
+    "nextLabel": "Next image",
     "items": {
-      "look1": {
-        "title": "Soft copper glow",
-        "category": "Color"
+      "shot01": {
+        "title": "The storefront",
+        "imageAlt": "Salon window with the 151 Hair Salon lettering, seen from the street"
       },
-      "look2": {
-        "title": "Editorial bob",
-        "category": "Cut"
+      "shot02": {
+        "title": "Beauty bar",
+        "imageAlt": "Pink Beauty Bar neon sign, hanging plants, and a wavy mirror"
       },
-      "look3": {
-        "title": "Gloss finish",
-        "category": "Styling"
+      "shot03": {
+        "title": "Styling stations",
+        "imageAlt": "Row of styling stations along the full-height mirror"
       },
-      "look4": {
-        "title": "Bridal texture",
-        "category": "Event"
+      "shot04": {
+        "title": "Front desk",
+        "imageAlt": "Reception counter with pink backlit slats, seen from the entrance"
       },
-      "look5": {
-        "title": "Natural waves",
-        "category": "Blow-dry"
+      "shot05": {
+        "title": "Main floor",
+        "imageAlt": "Wide view of the main floor with stations, dividers, and reception"
       },
-      "look6": {
-        "title": "Shine ritual",
-        "category": "Treatment"
+      "shot06": {
+        "title": "Product corner",
+        "imageAlt": "Shelves of hair products next to the pink wavy mirror"
+      },
+      "shot07": {
+        "title": "Towards the entrance",
+        "imageAlt": "View from the stations towards the entrance and daylight"
+      },
+      "shot08": {
+        "title": "Vintage chair",
+        "imageAlt": "Vintage barber chair in front of the dark wall of products"
+      },
+      "shot09": {
+        "title": "Washing area",
+        "imageAlt": "Washing area with two basins and the barber chair"
+      },
+      "shot10": {
+        "title": "Nail station",
+        "imageAlt": "Manicure station with lamps against the pink wall"
+      },
+      "shot11": {
+        "title": "Tropical detail",
+        "imageAlt": "Corner with dark tropical flamingo wallpaper and a warm light"
       }
     }
   },
