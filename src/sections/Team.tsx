@@ -2,13 +2,11 @@
 import { useTranslation } from "react-i18next";
 import SectionShell from "../components/SectionShell";
 import danielaImage from "../assets/images/team/daniela.jpg";
-import saraHairstylistImage from "../assets/images/team/sara_hairstylist.jpg";
 import sonaImage from "../assets/images/team/sona.jpg";
 import saraBarberImage from "../assets/images/team/sara_barber.jpg";
 
 const members = [
   { key: "daniela", image: danielaImage },
-  { key: "saraHair", image: saraHairstylistImage },
   { key: "sona", image: sonaImage },
   { key: "saraBarber", image: saraBarberImage },
 ] as const;
