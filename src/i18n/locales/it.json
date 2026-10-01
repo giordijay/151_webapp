@@ -9,7 +9,7 @@
   "hero": {
     "eyebrow": "151 Hair Salon",
     "title": "Creating unicorns since 2019",
-    "description": "151 Hair Salon e uno spazio costruito su una visione precisa, di ispirazione anglosassone: piu essenziale, piu diretta e lontana dagli standard dei saloni tradizionali. E il posto giusto per chi e stanco dei soliti schemi e cerca un approccio piu onesto, professionale e intenzionale. Ogni scelta segue una direzione precisa: creare qualcosa di autentico e distintivo.",
+    "description": "151 Hair Salon è uno spazio costruito su una visione precisa, di ispirazione anglosassone: più essenziale, più diretta e lontana dagli standard dei saloni tradizionali. È il posto giusto per chi è stanco dei soliti schemi e cerca un approccio più onesto, professionale e intenzionale. Ogni scelta segue una direzione precisa: creare qualcosa di autentico e distintivo.",
     "primaryCta": "Prenota ora",
     "secondaryCta": "Scopri i servizi",
     "badge": "Solo su appuntamento",
@@ -19,7 +19,7 @@
   "services": {
     "eyebrow": "Servizi",
     "title": "Servizi professionali per capelli, beauty e barber.",
-    "subtitle": "Ogni servizio e pensato per offrire risultati curati, coerenti e riconoscibili.",
+    "subtitle": "Ogni servizio è pensato per offrire risultati curati, coerenti e riconoscibili.",
     "categories": {
       "hair": {
         "title": "Hair",
@@ -113,7 +113,7 @@
   },
   "team": {
     "eyebrow": "Team",
-    "title": "Professioniste con visione, tecnica e identita.",
+    "title": "Professioniste con visione, tecnica e identità.",
     "subtitle": "Ogni profilo rappresenta un approccio preciso, con risultati distintivi e attenzione reale al dettaglio.",
     "members": {
       "daniela": {
@@ -131,7 +131,7 @@
       "saraBarber": {
         "name": "Sara",
         "role": "Barber",
-        "bio": "Tra linee pulite e contrasti tra classico e moderno, costruisco tagli e barbe con precisione e carattere. Offro un lavoro preciso, dove l'attenzione al dettaglio e cio che mi differenzia.",
+        "bio": "Tra linee pulite e contrasti tra classico e moderno, costruisco tagli e barbe con precisione e carattere. Offro un lavoro preciso, dove l'attenzione al dettaglio è ciò che mi differenzia.",
         "imageAlt": "Sara barber"
       }
     }
@@ -146,7 +146,7 @@
     "phone": "+39 379 1241756",
     "emailLabel": "Email",
     "email": "151hairsalon@gmail.com",
-    "appointmentLabel": "Disponibilita",
+    "appointmentLabel": "Disponibilità",
     "appointment": "SOLO SU APPUNTAMENTO"
   },
   "footer": {
