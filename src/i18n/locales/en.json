@@ -31,6 +31,7 @@
           "Vivid Colour",
           "Toning & Gloss",
           "Keratin Smoothing Treatment",
+          "Perm",
           "Styling & Updos",
           "Braids",
           "Reconstructive Treatments"
@@ -133,6 +134,12 @@
         "role": "Barber",
         "bio": "Through clean lines and contrasts between classic and modern, I craft haircuts and beards with precision and character. I deliver refined work where attention to detail sets me apart.",
         "imageAlt": "Sara barber"
+      },
+      "emine": {
+        "name": "Eminè",
+        "role": "Expert Stylist",
+        "bio": "Cutting and styling are at the heart of my professional journey. From classic lines to more contemporary looks, I create bespoke haircuts, braids, and statement updos, combining technique and creativity. My experience ranges from colour to perms, with a versatile approach and particular attention to bringing out the best in every style.",
+        "imageAlt": "Eminè"
       }
     }
   },

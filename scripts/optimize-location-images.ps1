@@ -1,9 +1,10 @@
 <#
 .SYNOPSIS
-    Ridimensiona e ricomprime le foto della gallery (src/assets/images/location).
+    Ridimensiona e ricomprime le foto della gallery (src/assets/images/location)
+    o del team (src/assets/images/team) con -Set team.
 
 .DESCRIPTION
-    Gli originali a piena risoluzione vengono spostati una volta sola in _originals/location
+    Gli originali a piena risoluzione vengono spostati una volta sola in _originals/<set>
     (cartella gitignorata) e da quel momento sono la sorgente di ogni run: lo script e
     idempotente e si puo rilanciare cambiando -MaxEdge / -Quality senza perdere nulla.
 
@@ -12,9 +13,13 @@
 .EXAMPLE
     powershell -ExecutionPolicy Bypass -File scripts/optimize-location-images.ps1
     powershell -ExecutionPolicy Bypass -File scripts/optimize-location-images.ps1 -MaxEdge 2400 -Quality 85
+    powershell -ExecutionPolicy Bypass -File scripts/optimize-location-images.ps1 -Set team -MaxEdge 1400
 #>
 [CmdletBinding()]
 param(
+    # Cartella da ottimizzare: location (gallery) o team.
+    [ValidateSet("location", "team")]
+    [string] $Set = "location",
     # Lato lungo massimo in pixel. Le immagini piu piccole non vengono mai ingrandite.
     [int] $MaxEdge = 2000,
     # Qualita JPEG 1-100.
@@ -28,8 +33,10 @@ $ErrorActionPreference = "Stop"
 Add-Type -AssemblyName System.Drawing
 
 $repoRoot = Split-Path -Parent $PSScriptRoot
-$targetDir = Join-Path $repoRoot "src\assets\images\location"
-$originalsDir = Join-Path $repoRoot "_originals\location"
+$targetDir = Join-Path $repoRoot "src\assets\images\$Set"
+$originalsDir = Join-Path $repoRoot "_originals\$Set"
+# Estensione di output allineata agli import esistenti.
+$outExtension = if ($Set -eq "team") { ".jpg" } else { ".jpeg" }
 
 if (-not (Test-Path $targetDir)) {
     throw "Cartella non trovata: $targetDir"
@@ -48,7 +55,7 @@ if ($backupCount -eq 0) {
     if ($toMove.Count -eq 0) {
         throw "Nessuna immagine da ottimizzare in $targetDir"
     }
-    Write-Host "Sposto $($toMove.Count) originali in _originals/location ..." -ForegroundColor Cyan
+    Write-Host "Sposto $($toMove.Count) originali in _originals/$Set ..." -ForegroundColor Cyan
     $toMove | Move-Item -Destination $originalsDir
 }
 
@@ -91,15 +98,15 @@ foreach ($source in $sources) {
             }
             finally { $graphics.Dispose() }
 
-            # Nome file invariato, estensione .jpeg come gli originali.
-            $outPath = Join-Path $targetDir ($source.BaseName + ".jpeg")
+            # Nome file invariato, estensione allineata agli import.
+            $outPath = Join-Path $targetDir ($source.BaseName + $outExtension)
             $bitmap.Save($outPath, $jpegCodec, $encoderParams)
         }
         finally { $bitmap.Dispose() }
     }
     finally { $image.Dispose() }
 
-    $outFile = Get-Item (Join-Path $targetDir ($source.BaseName + ".jpeg"))
+    $outFile = Get-Item (Join-Path $targetDir ($source.BaseName + $outExtension))
     $report += [pscustomobject]@{
         File   = $outFile.Name
         Width  = $width
@@ -117,6 +124,8 @@ $totalNow = ($report | Measure-Object -Property KB -Sum).Sum
 $totalBefore = ($report | Measure-Object -Property WasKB -Sum).Sum
 Write-Host ("Totale: {0} KB (prima {1} KB, -{2}%)" -f $totalNow, $totalBefore,
     [Math]::Round(100 - ($totalNow / $totalBefore * 100))) -ForegroundColor Green
-Write-Host ""
-Write-Host "Copia le dimensioni in src/data/galleryImages.ts:" -ForegroundColor Cyan
-$report | ForEach-Object { "  {0} -> width: {1}, height: {2}" -f $_.File, $_.Width, $_.Height }
+if ($Set -eq "location") {
+    Write-Host ""
+    Write-Host "Copia le dimensioni in src/data/galleryImages.ts:" -ForegroundColor Cyan
+    $report | ForEach-Object { "  {0} -> width: {1}, height: {2}" -f $_.File, $_.Width, $_.Height }
+}

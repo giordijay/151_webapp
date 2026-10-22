@@ -4,11 +4,13 @@ import SectionShell from "../components/SectionShell";
 import danielaImage from "../assets/images/team/daniela.jpg";
 import sonaImage from "../assets/images/team/sona.jpg";
 import saraBarberImage from "../assets/images/team/sara_barber.jpg";
+import emineImage from "../assets/images/team/emine.jpg";
 
 const members = [
   { key: "daniela", image: danielaImage },
   { key: "sona", image: sonaImage },
   { key: "saraBarber", image: saraBarberImage },
+  { key: "emine", image: emineImage },
 ] as const;
 
 function Team() {

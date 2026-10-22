@@ -31,6 +31,7 @@
           "Vivid Colours",
           "Tonalizzazione / Gloss",
           "Cheratina stirante",
+          "Permanente",
           "Styling & Acconciature",
           "Braids",
           "Trattamenti e ricostruzioni"
@@ -133,6 +134,12 @@
         "role": "Barber",
         "bio": "Tra linee pulite e contrasti tra classico e moderno, costruisco tagli e barbe con precisione e carattere. Offro un lavoro preciso, dove l'attenzione al dettaglio è ciò che mi differenzia.",
         "imageAlt": "Sara barber"
+      },
+      "emine": {
+        "name": "Eminè",
+        "role": "Expert Stylist",
+        "bio": "Il taglio e lo styling sono il cuore del mio percorso professionale. Dalle linee classiche ai look più contemporanei, realizzo tagli personalizzati, braids e acconciature d'effetto, combinando tecnica e creatività. La mia esperienza spazia dal colore alle permanenti, con un approccio versatile e un'attenzione particolare alla valorizzazione di ogni stile.",
+        "imageAlt": "Eminè"
       }
     }
   },
